@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Bootstrap connectioni -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+
+    <!-- font awesome kit -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="mySidenav" class="sidenav" style="width: 250px">
+      <!-- Side menu profile section -->
+      <div class="mb-4">
+        <div class="text-center">
+          <img
+            src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava3.webp"
+            alt="avatar"
+            class="rounded-circle img-fluid"
+            style="width: 100px"
+          />
+          <p class="text-light my-3">John Smith</p>
+          <p class="text-light my-3">admin@admin.com</p>
+        </div>
+      </div>
+
+      <!--End  Sidemenu profile section -->
+
+      <!-- Start sidemenu -->
+
+      <div class="main-menu">
+        <ul class="list-unstyled">
+          <li>
+            <a href="index.html"><i class="fas fa-home"></i> Dashboard</a>
+          </li>
+          <li>
+            <a href="pickup-management.html"
+              ><i class="fas fa-home"></i> Pickup Management</a
+            >
+          </li>
+          <li>
+            <a href="role-management.html"
+              ><i class="fas fa-home"></i> Role Managements</a
+            >
+          </li>
+          <li>
+            <a href="admin-user.html"><i class="fas fa-home"></i> Admin User</a>
+          </li>
+          <li>
+            <a href=""><i class="fas fa-home"></i> Deliveries</a>
+          </li>
+          <li>
+            <a href=""><i class="fas fa-home"></i> Hubs</a>
+          </li>
+          <li>
+            <a href=""><i class="fas fa-home"></i> Hub Account</a>
+          </li>
+          <li>
+            <a href=""><i class="fas fa-home"></i> General Accounts</a>
+          </li>
+          <li>
+            <a href=""><i class="fas fa-home"></i> Bill Management</a>
+          </li>
+          <li>
+            <a href=""><i class="fas fa-home"></i> Riders</a>
+          </li>
+          <li>
+            <a href=""><i class="fas fa-home"></i> Merchants</a>
+          </li>
+          <li>
+            <a href=""><i class="fas fa-home"></i> Products</a>
+          </li>
+          <li>
+            <a href=""><i class="fas fa-home"></i> Stores</a>
+          </li>
+          <li>
+            <a href=""><i class="fas fa-home"></i> Amendment Delivery</a>
+          </li>
+          <li>
+            <a href=""><i class="fas fa-home"></i> Invoices</a>
+          </li>
+          <li>
+            <a href=""><i class="fas fa-home"></i> Income</a>
+          </li>
+          <li>
+            <a href=""><i class="fas fa-home"></i> Expense</a>
+          </li>
+          <li>
+            <a href=""><i class="fas fa-home"></i> Financial Statement</a>
+          </li>
+          <li>
+            <a href=""><i class="fas fa-home"></i> Settings</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- end of full menu -->
+
+    <div id="main" style="margin-left: 250px">
+      <div class="d-flex justify-content-between align-items-center">
+        <div>
+          <span style="cursor: pointer" onclick="toggleNav();">
+            <div onclick="myFunction(this)">
+              <div class="bar1"></div>
+              <div class="bar2"></div>
+              <div class="bar3"></div>
+            </div>
+          </span>
+        </div>
+        <div class="d-flex flex-row">
+          <div class="p-2"><i class="top-menu-icon fas fa-search"></i></div>
+          <div class="p-2"><i class="top-menu-icon far fa-bell"></i></div>
+          <div class="p-2"><i class="top-menu-icon fas fa-user-cog"></i></div>
+        </div>
+      </div>
+
+      <hr />
+
+      <div class="content">
+        <!-- card row -->
+        <div class="row p-3">
+          <div class="col-sm-6 col-md-6 col-lg-3 mt-3">
+            <div class="card full-card">
+              <div class="card-body">
+                <div class="d-flex justify-content-between">
+                  <h6>Summary</h6>
+                  <div><i class="fas fa-ellipsis-v"></i></div>
+                </div>
+                <hr />
+                <div class="text-center text-primary">
+                  <h1 class="fw-bold">21</h1>
+                  <h4>Due Task</h4>
+                  <h6>Completed : 13</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-6 col-lg-3 mt-3">
+            <div class="card full-card">
+              <div class="card-body">
+                <div class="d-flex justify-content-between">
+                  <h6>Summary</h6>
+                  <div><i class="fas fa-ellipsis-v"></i></div>
+                </div>
+                <hr />
+                <div class="text-center text-danger">
+                  <h1 class="fw-bold">21</h1>
+                  <h4>Due Task</h4>
+                  <h6>Completed : 13</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-6 col-lg-3 mt-3">
+            <div class="card full-card">
+              <div class="card-body">
+                <div class="d-flex justify-content-between">
+                  <h6>Summary</h6>
+                  <div><i class="fas fa-ellipsis-v"></i></div>
+                </div>
+                <hr />
+                <div class="text-center text-warning">
+                  <h1 class="fw-bold">21</h1>
+                  <h4>Due Task</h4>
+                  <h6>Completed : 13</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-6 col-lg-3 mt-3">
+            <div class="card full-card">
+              <div class="card-body">
+                <div class="d-flex justify-content-between">
+                  <h6>Summary</h6>
+                  <div><i class="fas fa-ellipsis-v"></i></div>
+                </div>
+                <hr />
+                <div class="text-center text-success">
+                  <h1 class="fw-bold">21</h1>
+                  <h4>Due Task</h4>
+                  <h6>Completed : 13</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end of card row -->
+        <div class="row p-4">
+          <div class="card full-card">
+            <div class="transaction p-3">
+              <h4>Recent transactions</h4>
+              <h6>
+                <span class="text-danger">1 pending</span>,
+                <span class="text-success">4 completed</span>
+              </h6>
+            </div>
+            <div class="transaction-table">
+              <div class="table-responsive">
+                <table class="table table-hover text-center">
+                  <tbody>
+                    <tr>
+                      <th scope="col">Transaction ID</th>
+                      <th scope="col">Date</th>
+                      <th scope="col">Name</th>
+                      <th scope="col">Amount</th>
+                      <th scope="col">Status</th>
+                    </tr>
+                    <tr>
+                      <td>884960091RT</td>
+                      <td>Nov 29, 2019</td>
+                      <td>Charmaine Jackson</td>
+                      <td>$1,647.55</td>
+                      <td>
+                        <small class="rounded-3 bg-success text-light px-2 py-1"
+                          >COMPLETED</small
+                        >
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>884960091RT</td>
+                      <td>Nov 29, 2019</td>
+                      <td>Charmaine Jackson</td>
+                      <td>$1,647.55</td>
+                      <td>
+                        <small class="rounded-3 bg-success text-light px-2 py-1"
+                          >COMPLETED</small
+                        >
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>884960091RT</td>
+                      <td>Nov 29, 2019</td>
+                      <td>Charmaine Jackson</td>
+                      <td>$1,647.55</td>
+                      <td>
+                        <small class="rounded-3 bg-danger text-light px-2 py-1"
+                          >PENDING</small
+                        >
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>884960091RT</td>
+                      <td>Nov 29, 2019</td>
+                      <td>Charmaine Jackson</td>
+                      <td>$1,647.55</td>
+                      <td>
+                        <small class="rounded-3 bg-success text-light px-2 py-1"
+                          >COMPLETED</small
+                        >
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>884960091RT</td>
+                      <td>Nov 29, 2019</td>
+                      <td>Charmaine Jackson</td>
+                      <td>$1,647.55</td>
+                      <td>
+                        <small class="rounded-3 bg-danger text-light px-2 py-1"
+                          >PENDING</small
+                        >
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>884960091RT</td>
+                      <td>Nov 29, 2019</td>
+                      <td>Charmaine Jackson</td>
+                      <td>$1,647.55</td>
+                      <td>
+                        <small class="rounded-3 bg-success text-light px-2 py-1"
+                          >COMPLETED</small
+                        >
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/bootstrap.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script>
+      function toggleNav() {
+        var sidenav = document.getElementById("mySidenav"),
+          main = document.getElementById("main");
+        sidenav.style.width = sidenav.style.width === "250px" ? "0" : "250px";
+        main.style.marginLeft =
+          main.style.marginLeft === "250px" ? "0" : "250px";
+      }
+
+      function myFunction(x) {
+        x.classList.toggle("change");
+      }
+    </script>
+  </body>
+</html>
