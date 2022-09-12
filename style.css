@@ -90,9 +90,25 @@ body {
 .main-menu ul li a .fas {
   color: #f0b918;
 }
-.main-menu ul li:hover {
-  background-color: #333;
+.main-menu ul li:hover,
+.main-menu ul li.current {
+  background-color: #97781c;
   border-radius: 10px;
+  color: #111;
+}
+
+/* .sidebar .nav li a:hover, .sidebar .nav li.current > a {
+	background: #fff;
+	color: #555;
+   border-bottom:0px;
+} */
+
+.main-menu hr {
+  margin: 0 5px 0px 5px !important;
+
+  background-color: #816a25;
+  border: 0;
+  opacity: 0.5;
 }
 
 /* Dashboard */
@@ -102,11 +118,16 @@ body {
 .icon-big {
   font-size: 30px;
 }
-.full-card {
+.full-card-border {
   border-radius: 15px !important;
 }
 
-.full-card h1 {
+.border-top {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.full-card-border h1 {
   font-size: 4vw;
 }
 
@@ -133,4 +154,33 @@ body {
   height: 100%;
   border-radius: 20px;
   margin-left: 10px;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 10px 16px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+/* Style the active class, and buttons on mouse-over */
+.active {
+  background: #f1ba19;
+  overflow: hidden;
+}
+.active a {
+  color: white;
+}
+
+.borderless {
+  margin-bottom: 0 !important;
+}
+
+.borderless td,
+.borderless th {
+  border: none;
+  padding: 2px !important;
 }
